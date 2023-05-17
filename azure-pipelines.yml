@@ -5,14 +5,14 @@
 
 trigger:
   - '*'
-    
-  pool:
-    vmImage: ubuntu-latest
+
+pool:
+  vmImage: ubuntu-latest
   
-  variables:
-    buildConfiguration: 'Release'
+variables:
+  buildConfiguration: 'Release'
   
-  steps:
+steps:
   - task: UseDotNet@2
     displayName: 'Use .NET SDK 6.x'
     inputs:
